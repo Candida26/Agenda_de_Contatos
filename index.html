@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Agenda de Contatos - EBAC</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./agenda.png" id="Agenda" />
+            <h1> Agenda de Contatos - EBAC </h1>
+        </header>
+        <form id="formulario-agenda">
+            <input type="text" id="nome" placeholder="Digite o nome do contato" required />
+            <input type="tel" id="telefone" name="phone" placeholder="(xx) xxxxx-xxxx" maxlength="15" required />
+            <button type="submit"> + Adicionar </button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Contato:</th>
+                    <th>Telefone:</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table><br />
+        <p id="contato-adicionado"></p>
+    </div>    
+    <script src="main.js"></script>
+</body>
+</html>
